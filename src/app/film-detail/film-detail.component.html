@@ -1,0 +1,11 @@
+<div class="film-detail">
+  <img
+    [src]="'https://image.tmdb.org/t/p/w500' + film.poster_path"
+    alt="{{ film.title }}"
+  />
+  <h2>{{ film.title }}</h2>
+  <p>Date de sortie: {{ film.release_date }}</p>
+  <p>Note: {{ film.vote_average }}</p>
+  <p>Résumé: {{ film.overview }}</p>
+  <button (click)="goBackToList()">Retour</button>
+</div>
